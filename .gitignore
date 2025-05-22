@@ -1,0 +1,7 @@
+*.dSYM
+binarysearch
+linearsearch
+.vscode
+.exec
+.exe
+.DS_Store
