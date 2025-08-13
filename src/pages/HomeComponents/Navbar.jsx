@@ -1,10 +1,8 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const navLinks = [
-    { label: "About Me", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Coursework", href: "#coursework" },
+    { label: "PROJECTS", href: "#projects" },
+    { label: "COURSEWORK", href: "#coursework" },
 ];
 
 const Navbar = () => {
@@ -13,14 +11,14 @@ const Navbar = () => {
             initial={{ y: -60, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 80, delay: 0.2 }}
-            className="navbar fixed top-0 z-50 bg-base-100/80 backdrop-blur-md shadow-sm px-6"
+            className="navbar fixed top-0 z-50 bg-transparent backdrop-blur-md shadow-sm px-6"
         >
             <div className="flex-1">
                 <a
                     href="#hero"
-                    className="text-xl font-bold text-primary tracking-wide hover:opacity-80 transition"
+                    className="text-xl font- tracking-wide hover:opacity-80 transition"
                 >
-                    :)
+                    PETER TRINH
                 </a>
             </div>
 
@@ -57,7 +55,7 @@ const Navbar = () => {
                 </label>
                 <ul
                     tabIndex={0}
-                    className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow-md bg-base-100/90 backdrop-blur-md rounded-box w-52 space-y-2"
+                    className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow-md bg-transparent backdrop-blur-md rounded-box w-52 space-y-2"
                 >
                     {navLinks.map((link) => (
                         <li key={link.label}>
@@ -74,5 +72,4 @@ const Navbar = () => {
         </motion.nav>
     );
 };
-
 export default Navbar;

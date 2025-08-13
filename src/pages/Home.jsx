@@ -1,31 +1,36 @@
-import React from "react";
 import NameTyping from "./HomeComponents/NameTyping";
-import Skills from "./HomeComponents/Skills";
+{/*import Skills from "./HomeComponents/Skills";*/ }
 import Navbar from "./HomeComponents/NavBar";
 import Coursework from "./HomeComponents/Coursework";
 import AboutMe from "./HomeComponents/AboutMe";
+import Projects from "./HomeComponents/Projects";
+import Background from "./HomeComponents/Background";
 
 export const Home = () => {
     return (
         <>
+            {/*<Background />*/}
             <Navbar />
 
-            <section id="hero" className="py-20 mb-20">
+            <section id="hero" className="mb-0">
                 <NameTyping />
             </section>
 
-            <section id="about" className="py-20 bg-base-100 text-base-content">
+            {/*<section id="about" className="py-20 bg-transparent text-base-content">
                 <AboutMe />
-            </section>
+            </section>*/}
 
-            <section id="skills" className="py-20 bg-base-100 text-base-content">
+            {/*<section id="skills" className="py-40 bg-transparent text-base-content">
                 <Skills />
+            </section>*/}
+
+            <section id="projects" className="scroll-mt-20 py-40 bg-transparent text-base-content">
+                <Projects />
             </section>
 
-            <section id="coursework" className="py-20 bg-base-100 text-base-content">
+            <section id="coursework" className="py-0 bg-transparent text-base-content">
                 <Coursework />
             </section>
-
         </>
     );
 };

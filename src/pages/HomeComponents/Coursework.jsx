@@ -1,14 +1,19 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 
 const coursework = [
-    "Design & Analysis of Algorithms",
-    "Operating Systems",
-    "Discrete Structures",
-    "Computer Architecture",
-    "Probability",
-    "Security in Computing",
+    "Data Structures & Algorithms - COP3502C & COP3503C",
+    "Design & Analysis of Algorithms - COT5405",
+    "Operating Systems - COP4600",
+    "Discrete Structures - COT4210",
+    "Computer Architecture - EEL4768",
+    "Probability - MAP4113",
+    "Security in Computing CIS3360",
+    "Linear Algebra - MAS3106",
+    "Differential Equations - MAP2302",
+    "Numerical Methods - MAP4384",
+    "Calculus III - MAC2313",
+    "Database Systems - COP4710",
 ];
 
 const fadeItem = {
@@ -22,7 +27,7 @@ const fadeItem = {
 
 const Coursework = () => {
     return (
-        <section id="coursework" className="py-20 bg-base-100 text-base-content">
+        <section id="coursework" className="scroll-mt-20 py-0 my-32 bg-transparent text-base-content">
             <div className="max-w-6xl mx-auto px-6">
                 <motion.h2
                     initial={{ opacity: 0, y: -20 }}
@@ -31,7 +36,7 @@ const Coursework = () => {
                     viewport={{ once: true }}
                     className="text-4xl font-bold text-center mb-10"
                 >
-                    Coursework
+                    COURSEWORK
                 </motion.h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -43,7 +48,7 @@ const Coursework = () => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            className="flex items-center gap-3 p-3 rounded-lg bg-base-200 hover:bg-primary/10 transition"
+                            className="border flex items-center gap-3 p-3 rounded-lg bg-transparent hover:bg-primary/10 transition"
                         >
                             <FaCheckCircle className="text-primary text-xl" />
                             <span className="text-lg">{course}</span>
@@ -55,5 +60,4 @@ const Coursework = () => {
 
     );
 };
-
 export default Coursework;

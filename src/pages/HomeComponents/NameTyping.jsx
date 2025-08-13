@@ -1,27 +1,29 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
+import Links from './Links';
 
 const NameTyping = () => {
     const [showCursor, setShowCursor] = useState(true);
 
     return (
-        <div className="flex items-center justify-center h-screen bg-base-100">
-            <h1 className="text-4xl sm:text-6xl font-bold text-primary text-center">
+        <div className="flex flex-col items-center justify-center h-screen bg-transparent text-center">
+            <h1 className="text-4xl sm:text-6xl font-bold text-primary">
                 <Typewriter
-                    words={['Peter Trinh', 'UCF student', 'Aspiring Software Engineer']}
-                    loop={100} // Typing runs once
+                    words={['PETER TRINH', 'UCF STUDENT']}
+                    loop={100}
                     cursor={showCursor}
                     cursorStyle="|"
                     typeSpeed={80}
-                    deleteSpeed={100}
-                    delaySpeed={2000}
-                    onLoopDone={() => setShowCursor(false)} // Hide cursor when loop is done
+                    deleteSpeed={150}
+                    delaySpeed={4000}
+                    onLoopDone={() => setShowCursor(false)}
                 />
             </h1>
+            <Links />
         </div>
     );
 };
-
 export default NameTyping;
+
 
 
