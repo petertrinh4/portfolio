@@ -3,17 +3,11 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const coursework = [
     "Data Structures & Algorithms - COP3502C & COP3503C",
-    "Design & Analysis of Algorithms - COT5405",
-    "Operating Systems - COP4600",
-    "Discrete Structures - COT4210",
+    "Computer Organization - CDA3103C",
     "Computer Architecture - EEL4768",
-    "Probability - MAP4113",
     "Security in Computing CIS3360",
-    "Linear Algebra - MAS3106",
-    "Differential Equations - MAP2302",
-    "Numerical Methods - MAP4384",
-    "Calculus III - MAC2313",
-    "Database Systems - COP4710",
+    "Matrix & Linear Algebra - MAS3105",
+    "Object Oriented Programming - COP3330",
 ];
 
 const fadeItem = {
