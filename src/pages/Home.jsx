@@ -1,6 +1,6 @@
 import NameTyping from "./HomeComponents/NameTyping";
 {/*import Skills from "./HomeComponents/Skills";*/ }
-import Navbar from "./HomeComponents/NavBar";
+import NavBar from "./HomeComponents/NavBar";
 import Coursework from "./HomeComponents/Coursework";
 import AboutMe from "./HomeComponents/AboutMe";
 import Projects from "./HomeComponents/Projects";
@@ -10,7 +10,7 @@ export const Home = () => {
     return (
         <>
             {/*<Background />*/}
-            <Navbar />
+            <NavBar />
 
             <section id="hero" className="mb-0">
                 <NameTyping />

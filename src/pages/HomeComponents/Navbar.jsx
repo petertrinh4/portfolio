@@ -5,7 +5,7 @@ const navLinks = [
     { label: "COURSEWORK", href: "#coursework" },
 ];
 
-const Navbar = () => {
+const NavBar = () => {
     return (
         <motion.nav
             initial={{ y: -60, opacity: 0 }}
@@ -72,4 +72,4 @@ const Navbar = () => {
         </motion.nav>
     );
 };
-export default Navbar;
+export default NavBar;
