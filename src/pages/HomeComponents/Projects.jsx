@@ -15,7 +15,6 @@ const projects = [
     {
         title: "COMING SOON",
     },
-    // Add more projects here
 ];
 
 const fadeIn = {
